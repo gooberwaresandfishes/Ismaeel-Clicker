@@ -8,7 +8,5 @@
 - Click on his face and the purchases
 
 ## Features
-- Explore different buildings.
-- Upgrade skills and earn money.
-- Search for or buy items.
-- Take care of your cats.
+- Click on his face to earn points.
+- Buy upgrades to get points faster.
