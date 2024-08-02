@@ -1,0 +1,139 @@
+body {
+  /* puts gif as the background  */
+  background-image: url("./resources/other/background.gif");
+  background-repeat: repeat;
+
+  /* gets rid of scroll bar  */
+  overflow: hidden;
+}
+
+header {
+  /* positions header (this was made through trial and error lol)  */
+  margin-right: -8px;
+  margin-left: -8px;
+
+  text-align: center;
+  align-items: center;
+
+  /* puts gif as the header  */
+  background-image: url("./resources/other/head.gif");
+  background-size: 100% 100%;
+  background-repeat: repeat;
+}
+
+
+#response {
+  margin-top: -20px;
+  
+  font-size: 35px;
+  color: white;
+}
+
+#counter {
+  position: fixed;
+  top: 110px;
+  
+  /* centers */
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#stats {
+  position: fixed;
+  top: 270px;
+  
+  /* centers */
+  left: 50%;
+  transform: translate(-50%, 0);
+	
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+
+.images {
+  position: fixed;
+  top: 160px;
+
+  width: 310px;
+  height: 310px;
+  border-radius: 45px;
+}
+
+.centerboxes {
+  position: fixed;
+  top: 500px;
+	
+  width: 285px;
+  height: 285px;
+	
+  border-radius: 45px;
+  
+  /* animation */
+  transition: all .07s ease-in-out;
+}
+
+.centerboxes:hover {
+  width: 298px;
+  height: 298px;
+}
+
+.centerboxes:active {
+  width: 295px;
+  height: 295px;
+}
+
+
+.purchases {
+  background-size: 100% 100%;
+  position: fixed;
+	
+  width: 180px;
+  height: 75px;
+	
+  border-radius: 45px;
+	
+  text-align: center;
+  font-size: 13px;
+  
+  /* animation */
+  transition: all .07s ease-in-out;
+	
+  color: white;
+}
+
+.purchases:hover {
+  width: 190px;
+  height: 80px;
+}
+
+.purchases:active {
+  width: 185px;
+  height: 77px;
+}
+
+
+#cement {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  left: 10000px;
+}
+
+/* destroy cutscene controls */
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+  display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+  display: none;
+}
+
+

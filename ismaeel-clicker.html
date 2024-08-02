@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-uk">
+
+
+<html>
+
+  <head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta name="description"
+    content="a website on the COOL GUY (clickler man)click his face to get pints
+    and unlock upgrades and that, get high on the leaderboar!!!!!!!!!!!!!!">
+	
+	<title>ismaeel clicker</title>
+	
+    <link rel="icon" href="./resources/other/ismaeel.jpg">
+    <link rel="stylesheet" href="./stylesheet.css">
+	
+    <script src="./main.js">
+	</script>
+
+  </head>
+  <!-- HEAD END --------------------------------------------------------------->
+
+  <body> 
+  
+    <header>
+      <h1 style="margin-top: -10px; font-size: 60px; color: white;">
+	  ismaeel clicker
+	  </h1>
+	  
+      <h1 id="response">click on his face</h1>
+    </header>
+		
+		
+    <div> <!-- top area -->
+			
+      <h1 id="counter"></h1>
+	  <div id="stats"></div>
+	  
+	  <img class="images" id="leftpic" src="./resources/leftpics/1.jpg"
+      alt="cool skaleton", style="left: 403px;">
+					
+	  <img class="images" id="rightpic" src="./resources/rightpics/1.jpg"
+      alt="cool cat", style="right: 403px;">
+		
+	</div>	
+		
+      <div> <!-- bottom area -->
+			
+        <img id="bingus" class="centerboxes" src="./resources/other/bingus.gif"
+        alt="bingus" onclick="bingusModeClicked()" style="left: 403px;">
+			
+        <img id="face" class="centerboxes" src="./resources/other/ismaeel.jpg"
+        alt="ismaeel" onclick="clicked()" style="left: 50%;
+		transform: translate(-50%, 0);">
+
+        <img id="floppa" class="centerboxes" src="./resources/other/big-floppa.gif" 
+        alt="floppa" onclick="floppaClicked()" style="right: 403px;" >
+					
+      </div>
+	<!-- CENTRE END ----------------------------------------------------------->
+
+      <div> <!-- purchase area -->
+        <div id="p0" class="purchases" alt="purchase" style="right: 5px; top:140px; background-image:url('./resources/purchases/p0.png');" onclick="purchase(0)"></div>
+        <div id="p1" class="purchases" alt="purchase" style="right: 5px; top:236px; background-image:url('./resources/purchases/p1.png');" onclick="purchase(1)"></div>
+        <div id="p2" class="purchases" alt="purchase" style="right: 5px; top:333px; background-image:url('./resources/purchases/p2.png');" onclick="purchase(2)"></div>
+        <div id="p3" class="purchases" alt="purchase" style="right: 5px; top:430px; background-image:url('./resources/purchases/p3.png');" onclick="purchase(3)"></div>
+        <div id="p4" class="purchases" alt="purchase" style="right: 5px; top:526px; background-image:url('./resources/purchases/p4.png');" onclick="purchase(4)"></div>
+        <div id="p5" class="purchases" alt="purchase" style="right: 5px; top:623px; background-image:url('./resources/purchases/p5.png');" onclick="purchase(5)"></div>
+        <div id="p6" class="purchases" alt="purchase" style="right: 5px; top:720px; background-image:url('./resources/purchases/p6.png');" onclick="purchase(6)"></div>
+        <div id="p7" class="purchases" alt="purchase" style="right: 200px; top:140px; background-image:url('./resources/purchases/p7.png');" onclick="purchase(7)"></div>
+        <div id="p8" class="purchases" alt="purchase" style="right: 200px; top:236px; background-image:url('./resources/purchases/p8.png');" onclick="purchase(8)"></div>
+        <div id="p9" class="purchases" alt="purchase" style="right: 200px; top:333px; background-image:url('./resources/purchases/p9.png');" onclick="purchase(9)"></div>
+        <div id="p10" class="purchases" alt="purchase" style="right: 200px; top:430px; background-image:url('./resources/purchases/p10.png');" onclick="purchase(10)"></div>
+        <div id="p11" class="purchases" alt="purchase" style="right: 200px; top:526px; background-image:url('./resources/purchases/p11.png');" onclick="purchase(11)"></div>
+        <div id="p12" class="purchases" alt="purchase" style="right: 200px; top:623px; background-image:url('./resources/purchases/p12.png');" onclick="purchase(12)"></div>
+        <div id="p13" class="purchases" alt="purchase" style="right: 200px; top:720px; background-image:url('./resources/purchases/p13.png');" onclick="purchase(13)"></div>
+      </div>
+		
+      <div> <!-- character area -->
+        <div id="ismaeel" class="purchases" alt="purchase" style="left: 5px; top:140px; background-image:url('./resources/leftpurchases/ismaeel.jpg');"
+		onclick="characterClicked('ismaeel')">ismaeel<br>unlocked!</div>
+        <div id="adam" class="purchases" alt="purchase" style="left: 5px; top:236px; background-image:url('./resources/leftpurchases/adam.jpg');"
+		onclick="characterClicked('adam')">adam<br>10,000 to unlock</div>
+        <div id="mario" class="purchases" alt="purchase" style="left: 200px; top:140px; background-image:url('./resources/leftpurchases/marioimg.jpg');"
+		onclick="characterClicked('mario')">mario<br>20,000 to unlock</div>
+        <div id="custom" class="purchases" alt="purchase" style="left: 200px; top:236px; background-image:url('./resources/leftpurchases/custom.jpg');"
+		onclick="characterClicked('custom')">custom<br>30,000 to unlock</div>
+      </div>
+			
+      <div> <!-- ending area -->
+        <div class="purchases" alt="purchase" style="left: 5px; top:333px; background-image:url(
+		'./resources/leftpurchases/changesending.jpg');" onclick="ending(0)">ending 1<br>get to 50,000 points</div>
+        <div class="purchases" alt="purchase" style="left: 200px; top:333px; background-image:url(
+		'./resources/leftpurchases/froggedending.jpg');" onclick="ending(1)">ending 2<br>get to -10,000 points</div>
+        <div class="purchases" alt="purchase" style="left: 5px; top:430px; background-image:url(
+		'./resources/leftpurchases/coolguyending.jpg');" onclick="ending(2)">ending 3<br>get all skins</div>
+        <div class="purchases" alt="purchase" style="left: 200px; top:430px; background-image:url(
+		'./resources/leftpurchases/trolledending.jpg');" onclick="ending(3)">ending 4<br>get to 100,000 points</div>
+        <div class="purchases" alt="purchase" style="left: 5px; top:526px; background-image:url(
+		'./resources/leftpurchases/kickedoutending.jpg');" onclick="ending(4)">ending 5<br>get cementmoney to 2000</div>
+        <div class="purchases" alt="purchase" style="left: 200px; top:526px; background-image:url(
+		'./resources/leftpurchases/dingusending.jpg');" onclick="ending(5)">ending 6<br>get maxwell to level 25</div>
+        <div class="purchases" alt="purchase" style="left: 5px; top:623px; background-image:url(
+		'./resources/leftpurchases/robbedending.jpg');" onclick="ending(6)">ending 7<br>get to 10% theft chance</div>
+        <div class="purchases" alt="purchase" style="left: 200px; top:623px; background-image:url(
+		'./resources/leftpurchases/foolending.jpg');" onclick="ending(7)">ending 8<br>get to 10,000 without using any upgrades</div>
+      </div>
+		
+      <div> <!-- misc area -->
+        <div class="purchases" alt="purchase" style="left: 5px; top:720px; background-image:url(
+		'./resources/leftpurchases/bruhbutton.jpg');" onclick="playbruh()"></div>
+        <div class="purchases" alt="purchase" style="left: 200px; top:720px; background-image:url(
+		'./resources/leftpurchases/donotpress.jpg');" onclick="ending(8)"></div>
+      </div>
+	  <!-- PURCHASES END  ----------------------------------------------------->
+		
+	  <!-- misc tags -->
+      <img id="cement" src="./resources/other/cement.jpg" alt="cement" onclick="cementClicked()">
+
+		
+      <video id="vid" audiovolume="100" autoplay></video>
+
+      <audio hidden="true" id="backgroundmusic" autoplay loop> 
+        <source src="./resources/music/backgroundmusic.ogg">
+      </audio>
+	
+    <div style="position: fixed; bottom: 5px; left: 5px;">
+	hewad shoulders needs and toes
+	</div>
+	
+  </body>
+</html>
